@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ******************	-->
+<!-- Jedicut - Norsk 	-->
+<!-- Auteur : J. Rosvold	-->
+<!-- ******************	-->
+
+
+<Translation>
+
+<FAPropos Caption="Jedicut">
+	<MemoAPropos>
+		<Lines>
+			<Items Index="0" Value="Jeg frasier meg alt ansvar i bruken av denne progamvare "/>
+			<Items Index="1" Value="og alt hva denne kan bli brukt til."/>
+			<Items Index="2" Value=""/>
+			<Items Index="3" Value="Takk for at du rapporterer eventuelle feil på Aeropassions forum."/>
+		</Lines>
+	</MemoAPropos>
+	<BtnOk Caption="OK"/>
+</FAPropos>
+
+<FAssistantDecoupe Caption="Kutt veiviser">
+	<LblDecalage Caption="Offset (mm):"/>
+	<LblEnvergure Caption="Skala (mm):"/>
+	<LblFleche Caption="Tilbakesvept (mm):"/>
+	<LblAile Caption="Vinge"/>
+	<LblLongueurTable Caption="Lengde på skjæretråd (mm):"/>
+	<LblLongueurX Caption="Lengde av X (mm):"/>
+	<CheckBoxTroncon Caption="Flere seksjoner"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Avbryt"/>
+
+	<JvSpeedBtnCentrer Hint="Senter kutt" />
+	<JvSpeedBtnAdd Hint="Legg til seksjon" />
+	<JvSpeedBtnDelete Hint="Slett seksjonen" />
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Offset verdien er ikke kompatibel med lengden av kuttet."/>
+		<Item Name="MessageErreur02" Value="Lengden av kuttet samsvarer ikke med lengden av bordet."/>
+		<Item Name="JvStringGridNumero" Value="i"/>
+  		<Item Name="JvStringGridLongueur" Value="Lengde"/>
+		<Item Name="IHMAssistantDecalage" Value="Gap"/>
+  		<Item Name="IHMAssistantLongueur" Value="Lengde"/>
+		<Item Name="IHMAssistantFleche" Value="Pil"/>
+	</JvTranslatorStrings>
+</FAssistantDecoupe>
+
+<FChildDecoupe>
+	<LabeledEditEmplanture>
+		<SubLabel Caption="Vingerot :"/>
+	</LabeledEditEmplanture>
+	<LabeledEditSaumon>
+		<SubLabel Caption="Vingetipp :"/>
+	</LabeledEditSaumon>
+	<LEditCordeEmplanture>
+		<SubLabel Caption="Vingerot spant (mm) :"/>
+	</LEditCordeEmplanture>
+	<LEditEpRelativeEmplanture>
+		<SubLabel Caption="Relativ tykkelse på vingerot :"/>
+	</LEditEpRelativeEmplanture>
+	<LEditCordeSaumon>
+		<SubLabel Caption="Vingetipp spant (mm) :"/>
+	</LEditCordeSaumon>
+	<LEditEpRelativeSaumon>
+		<SubLabel Caption="Relativ tykkelse på vingetipp :"/>
+	</LEditEpRelativeSaumon>
+	<LEditVrillageEmplanture>
+		<SubLabel Caption="Vridning (°) :"/>
+	</LEditVrillageEmplanture>
+	<LEditVrillageSaumon>
+		<SubLabel Caption="Vridning (°) :"/>
+	</LEditVrillageSaumon>
+	<LabeledEditDepart>
+		<SubLabel Caption="Start høyde"/>
+	</LabeledEditDepart>
+	<LabeledEditDegagement>
+		<SubLabel Caption="Slutthøyde"/>
+	</LabeledEditDegagement>
+	<CheckBoxVrillage Caption="Vis vridning"/>
+	<CheckBoxAssistantDecoupe Caption="Skjære veiviser"/>
+
+	<RadioGroupAile Caption="Vinge">
+		<Items>
+			<Item Index="0" Value="Venstre"/>
+     			<Item Index="1" Value="Høyre"/>
+		</Items>
+	</RadioGroupAile>
+	
+	<GroupBoxPeauEmpl Caption="Overflate egenskaper"/>
+	<LabeledEditEpaisseurEmpl>
+		<SubLabel Caption="Tykkelse (mm) :"/>
+	</LabeledEditEpaisseurEmpl>
+	<CheckBoxInverserPeauEmpl Caption="Inverte"/>
+
+	<GroupBoxPeauSaum Caption="Overflate egenskaper"/>
+	<LabeledEditEpaisseurSaum>
+		<SubLabel Caption="Tykkelse (mm) :"/>
+	</LabeledEditEpaisseurSaum>
+	<CheckBoxInverserPeauSaum Caption="Inverte"/>
+
+	<LabelDescription Caption="Beskrivelse :"/>
+	<CheckBoxProfilSymetrique Caption="Symetrisk profil"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut kan ikke åpne denne filen."/>
+		<Item Name="MessageErreur2001" Value="Rot og tipp profil har ikke samme antall nøkkelpunkt. Umulig å skjære."/>
+		<Item Name="MessageErreur2003" Value="En feil oppstod under kalkulering av punktene til profilene."/>
+		<Item Name="MessageErreur2004" Value="En feil oppstod under skjæreinstillinger"/>
+		<Item Name="MessageErreur2006" Value="En feil oppstod under bestemelsen av verdiene for profilen"/>
+		<Item Name="MessageTexte01" Value="Vil du lagre endringer ?"/>
+		<Item Name="TexteInterface01" Value="Uten Navn - Kutt"/>
+  		<Item Name="MessageWarning01" Value="Første material innstilling er feil. Jedicut vil bruke statisk oppvarming (50%)"/>	
+	</JvTranslatorStrings>
+</FChildDecoupe>
+
+<FChildProfil>
+	<LblNom Caption="Navn :"/>	
+	<LblEpaisseurRelative Caption="Relativ tykkelse :"/>
+	<LblDescription Caption="Forklaring :"/>
+	<LblExtrado Caption="--> Over"/>
+	<BitBtnAppliquer Caption="Bruk"/>
+	<LblIntrado Caption="--> Under"/>
+
+	<!-- <PopupMenuChildProfil> -->
+		<Insrer1 Caption="Legg inn"/>
+		<Supprimer1 Caption="Slett"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageErreur01" Value="Jedicut kan ikke åpne denne filen."/>
+		<Item Name="MessageErreur02" Value="Relativ tykkelse kan ikke være lik 0."/>
+		<Item Name="MessageTexte01" Value="Det er ingen beskrivelse for denne fil typen."/>
+		<Item Name="TexteInterface01" Value="Ingen navn - Profil"/>
+	</JvTranslatorStrings>
+
+</FChildProfil>
+
+<FConfirmationDecoupe Caption="Kutt">
+	<MemoAssistant>
+		<Lines>
+			<Item Index="0" Value="Kutt veiviser konfigurering"/>
+		</Lines>
+	</MemoAssistant>
+	<BtnAssistant Caption="Konfigurering"/>
+	<RadioButtonMateriau Caption="Varme kontroll for material"/>
+	<RadioButtonManuel Caption="Manuel varme kontroll"/>
+	<LblConfirmation Caption="Vil du virkelig starte kuttet?"/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Avbryt"/>
+	<LblModeChauffe Caption="Konfigurasjon av varme kontroll for bordet :"/>
+	<JvTranslatorStrings>
+		<Item Name="MessageEtatChauffeManuel" Value="Ekstern"/>
+		<Item Name="MessageEtatChauffePC" Value="Pc"/>
+	</JvTranslatorStrings>
+</FConfirmationDecoupe>
+
+<FCycleDecoupe Caption="Kutt behandler syklus">
+
+	<RadioGroupCote Caption="Profil">
+		<Items>
+			<Item Index="0" Value="Vinge rot"/>
+     			<Item Index="1" Value="Vinge tipp"/>
+		</Items>
+	</RadioGroupCote>
+
+	<GroupBoxAffichage Caption="Vis"/>
+		<SpeedBtnZoomIn Hint="Zoom inn"/>
+		<SpeedBtnZoomOut Hint="Zoom ut"/>
+		<SpeedBtnShowPoint Hint="Vis alle punkter"/>
+
+	<GroupBoxKeyPoint Caption="Nøkkelpunkter"/>
+		<SpeedBtnAddKey Hint="Legg til nøkkelpunkt"/>
+		<SpeedBtnDeleteKey Hint="Slett et nøkkelpunkt"/>
+
+	<BtnParDefaut Caption="Standardverdi..."/>
+	<BtnOk Caption="OK"/>
+	<BtnAnnuler Caption="Avbryt"/>
+	<BtnAppliquer Caption="Bruk"/>
+
+	<FrameCycleAile>	
+		<LblListe Caption="Skjæresyklus"/>
+	
+		<BtnSupprimer Caption="Slett"/>
+		<BtnSupprimerTout Caption="Slett alt"/>
+	
+		<GroupBoxProprietes Caption="Egenskaper"/>
+			<LabeledEditDeplacement>
+				<SubLabel Caption="Flytt (mm) :"/>
+			</LabeledEditDeplacement>
+			<CheckBoxLissage Caption="Utgjevning"/>
+			<CheckBoxInverser Caption="Inverte"/>
+			<RadioGroupQualification Caption="Type">
+				<Items>
+					<Item Index="0" Value="Nøytral"/>
+	     				<Item Index="1" Value="Teller"/>
+	     				<Item Index="2" Value="RAZ Teller"/>
+				</Items>
+			</RadioGroupQualification>
+			<RadioGroupVitesse Caption="Fart">
+				<Items>
+					<Item Index="0" Value="Kutt"/>
+	     				<Item Index="1" Value="Hurtig"/>
+				</Items>
+			</RadioGroupVitesse>
+			<RadioGroupSpecial Caption="Spesial">
+				<Items>
+					<Item Index="0" Value="Standard"/>
+	     				<Item Index="1" Value="Start Høyde"/>
+	     				<Item Index="2" Value="Slutt Høyde"/>
+				</Items>
+			</RadioGroupSpecial>
+
+		<JvTranslatorStringsCycleAile>
+			<Item Name="MessageTexte01" Value="Ovenfor"/>
+			<Item Name="MessageTexte02" Value="Nedenfor"/>
+			<Item Name="MessageTexte03" Value="Pause"/>
+			<Item Name="MessageTexte04" Value="Horisontal"/>
+			<Item Name="MessageTexte05" Value="Vertikal"/>
+			<Item Name="MessageTexte06" Value="Tid (ms) :"/>
+			<Item Name="MessageTexte07" Value="Flytt (mm) :"/>
+		</JvTranslatorStringsCycleAile>
+
+	</FrameCycleAile>
+	
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Vil du bruke denne kutt syklusen som standard ?"/>
+		<Item Name="MessageDialogue02" Value="Antallet av nøkkelpunkter mellom rot og tipp er forskjellig.  Vil du korrigere ?"/>
+		<Item Name="MessageDialogue03" Value="Antallet nøkkelpunkter er forskjellig mellom rot og tipp."/>
+	</JvTranslatorStrings>
+
+</FCycleDecoupe>
+
+<FDecoupeEnCours Caption="CNC kontroller komunikasjon">
+	<LabelDecoupe Caption="Kutt pågår..."/>
+	<BtnPause Caption="Pause"/>
+	<BtnAnnuler Caption="Avbryt"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageBtn01" Value="Pause"/>
+		<Item Name="MessageBtn02" Value="Gjenoppta"/>
+		<Item Name="MessageTexte01" Value="Kutt pågår..."/>
+		<Item Name="MessageTexte02" Value="Kutt satt på pause."/>
+	</JvTranslatorStrings>
+
+</FDecoupeEnCours>
+
+<FGestionLongeron Caption="Spant behandler">
+	<LblListeLongerons Caption="Spant liste"/>
+
+	<GroupboxProprietes Caption="Egenskaper"/>
+		<LabeledEditEmplantureHauteur>
+			<SubLabel Caption="Høyde (mm) :"/>
+		</LabeledEditEmplantureHauteur>
+		<LabeledEditEmplantureLargeur>
+			<SubLabel Caption="Bredde (mm) :"/>
+		</LabeledEditEmplantureLargeur>
+		<LabeledEditSaumonHauteur>
+			<SubLabel Caption="Høyde (mm) :"/>
+		</LabeledEditSaumonHauteur>
+		<LabeledEditSaumonLargeur>
+			<SubLabel Caption="Bredde (mm) :"/>
+		</LabeledEditSaumonLargeur>
+		<LabeledEditAngle>
+			<SubLabel Caption="Vinkel (°) :"/>
+		</LabeledEditAngle>
+		<CheckBoxParalleleAttaque Caption="Parallel til forkant"/>
+		<CheckBoxRegulier Caption="Konstant seksjon"/>
+		<LabeledEditEmplantureOffsetX>
+			<SubLabel Caption="Vingerot - Offset X (mm) :"/>
+		</LabeledEditEmplantureOffsetX>
+		<LabeledEditSaumonOffsetX>
+			<SubLabel Caption="Vingetipp - Offset X (mm) :"/>
+		</LabeledEditSaumonOffsetX>
+		<RadioGroupPosition Caption="Posisjon">
+			<Items>
+				<Item Index="0" Value="Ovenfor"/>
+     				<Item Index="1" Value="Nedenfor"/>
+			</Items>
+		</RadioGroupPosition>
+		<LblEmplanture Caption="Vingerot"/>
+		<LblSaumon Caption="Vingetipp"/>
+
+	<BtnNouveau Caption="Ny"/>
+	<BtnSupprimer Caption="Slette"/>
+	<BtnSupprimerTout Caption="Slette alt"/>
+	<BtnOk Caption="OK"/>
+	<Btnannuler Caption="Avbryt"/>
+
+	<JvTranslatorStrings>
+		<Item Name="MessageTexte01" Value="Rektangel"/>
+		<Item Name="MessageTexte02" Value="Rund"/>
+		<Item Name="MessageTexte03" Value="Høyde (mm) :"/>
+		<Item Name="MessageTexte04" Value="Bredde (mm) :"/>
+		<Item Name="MessageTexte05" Value="Dybde (mm) :"/>
+		<Item Name="MessageTexte06" Value="Diameter (mm) :"/>
+	</JvTranslatorStrings>
+
+</FGestionLongeron>
+
+<FMain>
+<!-- MainMenu -->
+		<Fichier1 Caption="Fil"/>
+			<Nouveau1 Caption="Ny"/>
+				<Dcoupe1 Caption="Vinge"/>
+				<Profil1 Caption="Profil"/>
+			<Ouvrir1 caption="Åpne"/>
+			<Enregistrer1 Caption="Lagre"/>
+			<Enregistrersous1 Caption="Lagre som..."/>
+			<Fermer1 Caption="Lukk"/>
+			<ToutFermer1 Caption="Lukk alt"/>
+			<ImporterDXF1 Caption="Importer DXF"/>
+			<Aperuavantdcoupe1 Caption="Forhåndsvis Kutt"/>
+			<Dcouper1 Caption="Kutt"/>
+			<Quitter1 Caption="Avslutt"/>
+		<Option1 Caption="Verktøy"/>
+			<RinitialiserPosition1 Caption="Flytt til referanse posisjonen"/>
+			<EnregistrerPosition1 Caption="Lagre referanse posisjonen"/>
+			<Assistantdcoupe1 Caption="Kutt Veiviser"/>
+			<Gestiondeslongerons1 Caption="Spant behandler"/>
+			<Cycledecoupe1 Caption="Kutt behandler Syklus"/>
+			<Logiciel1 Caption="Alternativer"/>
+		<Fentre1 Caption="Vindu"/>
+			<Barredoutils1 Caption="Vertøyfane"/>
+			<Convertisseur1	 Caption="Konverter tomme/mm"/>
+			<Contrlemanuel1 Caption="Manuel kontroll"/>
+		<Help1 Caption="Hjelp"/>
+			<AideJedicut Caption="Jedicut Hjelp"/>
+			<Donate1 Caption="Doner"/>
+			<Preferences1 Caption="Preferanser"/>
+			<About1 Caption="Om..."/>
+		<MenuItemUpdate Caption="Oppdatering tilgjengelig !"/>
+<!-- /MainMenu -->
+<!-- JVPopupMenu -->
+		<PetitesIcones1 Caption="Små ikoner"/>
+		<GrandesIcones1 Caption="Store ikoner"/>
+		<Masquer1 Caption="Skjul"/>
+<!-- /JVPopupMenu -->
+	<LabeledEditDeplacement>
+		<SubLabel Caption="Flytt (mm) :"/>
+	</LabeledEditDeplacement>
+
+	<CheckBoxDependance Caption="Kutte opp"/>
+	<CheckBoxGuillotine Caption="Parallelt kutt"/>
+	<CheckBoxOblique Caption="Skrå"/>
+	<CheckBoxLissage Caption="Utgjevn"/>
+
+	<RadioButtonLente Caption="Sakte"/>
+	<RadioButtonRapide Caption="Hurtig"/>
+
+	<CheckBoxActiverChauffe Caption="Aktiver Varme"/>
+	<GroupBoxChauffe Caption=""/>
+	<RadioButtonMateriau Caption="Velg Materiale"/>
+	<RadioButtonManuel Caption="Manuell Kontroll"/>
+
+	<BitBtnValider Caption="Bekreft"/>
+
+	<!-- Liste des chaines en dures -->
+	<JvTranslatorStringsMain>
+		<Item Name="MessageErreur01" Value="Språkfila mangler : "/>
+		<Item Name="MessageErreur02" Value="En feil oppstod med språkfila."/>
+		<Item Name="MessageErreur03" Value="Jedipix Dll  mangler."/>
+		<Item Name="MessageErreur04" Value="Kan ikke finne hjelp fila."/>
+		<Item Name="MessageErreur05" Value="Du kan installere Microsoft HTML Hjelp 1.2 el. høyere."/>.
+		<Item Name="MessageErreur06" Value="Antallet nøkkelpunkter er forskjellig mellom vingerot og vingetipp."/>
+  		<Item Name="OpenDialogFilterAll" Value="Vinge (*.jdc)|*.jdc|Profil  (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat|Alle|*.*"/>
+  		<Item Name="OpenDialogFilterImporterDXF" Value="Importer DFX fil|*.dxf"/>
+  		<Item Name="SaveDialogFilterJDC" Value="Vinge (*.jdc)|*.jdc"/>
+  		<Item Name="SaveDialogFilterProfil" Value="Profil (*.jdp)|*.jdp|Profil (*.prf)|*.prf|Profil (*.dat)|*.dat"/>
+  		<Item Name="MessageDialogue01" Value="Er du sikker på om du vil sette maskinen til referanse posisjonen ?"/>
+  		<Item Name="MessageDialogue02" Value="Vil du lagre referanse posisjonen ?"/>
+  		<Item Name="PilotageManuel01" Value="Flytt (mm) :"/>
+  		<Item Name="PilotageManuel02" Value="X (mm) :"/>
+  		<Item Name="PilotageManuel03" Value="Y (mm) :"/>
+  		<Item Name="PilotageManuel04" Value="Vinkel (°) :"/>
+	</JvTranslatorStringsMain>
+</FMain>
+
+<FOptions Caption="Alternativer">
+	<JvTranslatorStrings>
+		<Item Name="MessageDialogue01" Value="Vil du fjerne denne tabellen ?"/>
+		<Item Name="MessageDialogue02" Value="Denne tabellen finnes ikke."/>
+		<Item Name="MessageDialogue03" Value="Tabellen ble opprettet."/>
+		<Item Name="MessageDialogue04" Value="Feil ved skriving til fila."/>
+		<Item Name="MessageDialogue05" Value="Denne tabellen finnes alerede. Velg et annet navn."/>
+	</JvTranslatorStrings>
+
+	<JvNavPanelPageCommunication Caption="Komunikasjon"/>
+	<JvNavPanelPageChauffe Caption="Oppvarming"/>
+	<JvNavPanelPageMachine Caption="CNC kontroller"/>
+
+	<LblMenuCom Caption="Komunikasjon"/>
+	<LblMenuChauffe Caption="Oppvarming"/>
+	<LblMenuMachine Caption="CNC kontroller"/>
+	<LblMenuGCode Caption="GKode"/>	
+	
+	<FrameNavChauffe1>
+		<LblTitre1 Caption="Aktiver oppvarming :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="For å aktivere oppvarming må"/>
+				<Item Index="1" Value="du synkronisere motorer med"/>
+				<Item Index="2" Value="en ekstern timer."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Material liste :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Du kan kofigurer din"/>
+				<Item Index="1" Value="favoritt material liste for"/>
+				<Item Index="2" Value="å lagre varmeverdiene"/>
+				<Item Index="3" Value="for hvert kutt."/>
+			</Lines>
+		</Memo2>
+	</FrameNavChauffe1>
+	
+	<FrameNavCommunication1>
+		<LblTitre1 Caption="Plug-in :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Velg plug-in som tilsvarer"/>
+				<Item Index="1" Value="din CNC."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Parallel Port :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Manuell konfigurerig av"/>
+				<Item Index="1" Value="oppvarmingen er for øyeblikket ikke tilgjengelig."/>
+				<Item Index="2" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavCommunication1>
+	
+	<FrameNavMachine1>
+		<LblTitre1 Caption="Motor"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Verdien mm / step : Indikerer"/>
+				<Item Index="1" Value="distansem mellom 2 stepp."/>
+				<Item Index="2" Value=""/>
+				<Item Index="3" Value=""/>
+				<Item Index="4" Value="Fart : Heltall indikerer tiden"/>
+				<Item Index="5" Value="mellom 2 stepp på"/>
+				<Item Index="6" Value="motoren."/>
+				<Item Index="7" Value=""/>
+				<Item Index="8" Value="Inverter : Velg for å snu"/>
+				<Item Index="9" Value="rotasjon på motor."/>
+			</Lines>
+		</Memo1>
+		<LblTitre2 Caption="Viktig :"/>
+		<Memo2>
+			<Lines>
+				<Item Index="0" Value="Hvis oppvarmingskontrollen er aktivert,"/>
+				<Item Index="1" Value="er hastighet kontrolert av den"/>
+				<Item Index="2" Value="eksterne timeren."/>
+				<Item Index="3" Value=""/>
+			</Lines>
+		</Memo2>
+	</FrameNavMachine1>
+
+	<FrameNavGCode1>
+		<LblTitre1 Caption="Gkode :"/>
+		<Memo1>
+			<Lines>
+				<Item Index="0" Value="Still inn programvaren "/>   
+				<Item Index="1" Value="i henhold til egenskapene "/> 
+				<Item Index="2" Value="til interpolasjonsprogramvaren "/>
+				<Item Index="3" Value="du bruker."/>
+				<Item Index="4" Value=""/>
+				<Item Index="5" Value="Jedicut genererer Gkode, "/>
+				<Item Index="6" Value="men sender den ikke til CNC "/>
+				<Item Index="7" Value="maskinen."/>
+				<Item Index="8" Value=""/>				
+			</Lines>
+		</Memo1>
+	</FrameNavGCode1>
+
+	<FrameOptionCommunication1>
+		<GroupBoxPlugIn Caption="Plug-in"/>
+		<LblListePlugIn Caption="Kommunikasjonsmodus"/>
+		<LblDescription Caption="Beskrivelse"/>
+
+		<GroupBoxConfiguration Caption="Parallel Port konfigurasjon"/>
+		<Label1 Caption="Motorer av/på : "/>
+		<Label3 Caption="Visning av DB25-kontakten"/>
+		<Label4 Caption="Motor X1"/>
+		<Label5 Caption="Motor X2"/>
+		<Label6 Caption="Motor Y1"/>
+		<Label7 Caption="Motor Y2"/>
+		<Label8 Caption="Rettning"/>
+		<Label9 Caption="Klokke"/>
+		<Label11 Caption="Ekstern Timer Pin :"/>
+		<Label12 Caption="Oppvarm. Status Pin :"/>
+		<Label13 Caption="Oppvarm. Kontroll Pin :"/>
+		<Label14 Caption="Oppvarm. Retur Pin :"/>
+
+		<CheckBoxSynchroniserMoteurAvecTimerExterne Caption="Synkroniser stepper rotasjon med ekstern timer."/>
+
+		<LblEditFrequenceTimer>
+			<SubLabel Caption="Frekves :"/>
+		</LblEditFrequenceTimer>
+
+	</FrameOptionCommunication1>
+
+	<FrameOptionChauffe1>
+		<JvTranslatorStrings>
+			<Item Name="JvStringGridNom" Value="Navn på material"/>
+			<Item Name="JvStringGridV1" Value="V1"/>
+			<Item Name="JvStringGridC1" Value="C1"/>
+			<Item Name="JvStringGridR1" Value="R1"/>
+			<Item Name="JvStringGridV2" Value="V2"/>
+			<Item Name="JvStringGridC2" Value="C2"/>
+			<Item Name="JvStringGridR2" Value="R2"/>
+		</JvTranslatorStrings>
+		<CheckBoxActiverChauffe Caption="Aktiver / Deaktiver oppvarmings kontroll "/>
+		<CheckBoxLireMode Caption="Les oppvarmings kontrollmodus fra parallelport (Manu / Auto)"/>
+		<CheckBoxChauffeDynamique Caption="Aktiver dynamisk varmekontroll"/>
+		<LblListeMateriaux Caption="Material liste :"/>
+		<BtnAjouter Caption="Legg til"/>
+		<BtnSupprimer Caption="Fjern"/>
+		<LblEditDeplacement>
+			<SubLabel Caption="Beveg akse X (mm) :"/>
+		</LblEditDeplacement>
+		<LblVitesse Caption="Hastighets verdi :"/>
+		<BtnTester Caption="Test"/>
+		<LblTitreValChauffe Caption="Varme verdi :"/>
+		<BtnEnregistrer Caption="Lagre"/>
+		<LblEditNomMateriau>
+			<SubLabel Caption="Navn på materialet :"/>
+		</LblEditNomMateriau>
+		<LblEditRayonnement>
+			<SubLabel Caption="Varmeutstråling (mm) :"/>
+		</LblEditRayonnement>
+		<RadioBtnMesure1 Caption="Mål 1"/>
+		<RadioBtnMesure2 Caption="Mål 2"/>	
+	</FrameOptionChauffe1>
+	
+	<FrameOptionMachine1>
+		<GroupBoxX1 Caption="Stepper X1"/>
+		<LabeledEditCoeffX1>
+			<SubLabel Caption="Ant mm pr stepp"/>
+		</LabeledEditCoeffX1>
+		<LabeledEditVDecoupeX1>
+			<SubLabel Caption="Skjære hastighet"/>
+		</LabeledEditVDecoupeX1>
+		<LabeledEditVRapideX1>
+			<SubLabel Caption="Høy Fart"/>
+		</LabeledEditVRapideX1>
+		<CheckBoxInverserX1 Caption="Inverter"/>
+
+		<GroupBoxX2 Caption="Stepper X2"/>
+		<LabeledEditCoeffX2>
+			<SubLabel Caption="Ant mm pr stepp"/>
+		</LabeledEditCoeffX2>
+		<LabeledEditVDecoupeX2>
+			<SubLabel Caption="Skjære hastighet"/>
+		</LabeledEditVDecoupeX2>
+		<LabeledEditVRapideX2>
+			<SubLabel Caption="Høy Fart"/>
+		</LabeledEditVRapideX2>
+		<CheckBoxInverserX2 Caption="Inverter"/>
+
+		<GroupBoxY1 Caption="Stepper Y1"/>
+		<LabeledEditCoeffY1>
+			<SubLabel Caption="Ant mm pr stepp"/>
+		</LabeledEditCoeffY1>
+		<LabeledEditVDecoupeY1>
+			<SubLabel Caption="Skjære hastighet"/>
+		</LabeledEditVDecoupeY1>
+		<LabeledEditVRapideY1>
+			<SubLabel Caption="Høy Fart"/>
+		</LabeledEditVRapideY1>
+		<CheckBoxInverserY1 Caption="Inverter"/>
+
+		<GroupBoxY2 Caption="Stepper Y2"/>
+		<LabeledEditCoeffY2>
+			<SubLabel Caption="Ant mm pr stepp"/>
+		</LabeledEditCoeffY2>
+		<LabeledEditVDecoupeY2>
+			<SubLabel Caption="Skjære hastighet"/>
+		</LabeledEditVDecoupeY2>
+		<LabeledEditVRapideY2>
+			<SubLabel Caption="Høy Fart"/>
+		</LabeledEditVRapideY2>
+		<CheckBoxInverserY2 Caption="Inverter"/>
+
+		<LblEditLongueurMachine>
+			<SubLabel Caption="Lengde på skjæretråd (mm) :"/>
+		</LblEditLongueurMachine>
+		<LblEditLargeurMachine>
+			<SubLabel Caption="Lengde på X akse (mm) :"/>
+		</LblEditLargeurMachine>
+
+		<LblEstimationDecoupeX1 Caption="Estimert (mm/s)"/>
+		<LblEstimationRapideX1 Caption="Estimert (mm/s)"/>
+		<LblEstimationDecoupeX2 Caption="Estimert (mm/s)"/>
+		<LblEstimationRapideX2 Caption="Estimert (mm/s)"/>
+		<LblEstimationDecoupeY1 Caption="Estimert (mm/s)"/>
+		<LblEstimationRapideY1 Caption="Estimert (mm/s)"/>
+		<LblEstimationDecoupeY2 Caption="Estimert (mm/s)"/>
+		<LblEstimationRapideY2 Caption="Estimert (mm/s)"/>
+
+	</FrameOptionMachine1>
+	
+	<FrameOptionGCode1>
+		<GroupBoxGeneral Caption=" Hoved "/>
+		<LblEditEmplacement>
+			<SubLabel Caption="Mappe :"/>
+		</LblEditEmplacement>
+		<LblUnit Caption="Enhet"/>
+		<ComboBoxUnit>
+			<Items>
+				<Item Index="0" Value="Millimeter"/>
+	     		<Item Index="1" Value="Tomme"/>	
+			</Items>
+		</ComboBoxUnit>
+		<LblVitesse Caption="Hastighet Modus :"/>
+		<ComboBoxSpeed>
+			<Items>
+				<Item Index="0" Value="Konstant"/>
+				<Item Index="1" Value="Kontrollert"/>
+			</Items>
+		</ComboBoxSpeed>
+		<LblDecimalSeparator Caption="Desimal seperator :"/>
+		<LblTimeUnit Caption="Tid :"/>
+		<ComboBoxTimeUnit>
+			<Items>
+				<Item Index="0" Value="Millisekund"/>
+				<Item Index="1" Value="Sekund"/>
+				<Item Index="2" Value="Minutt"/>
+			</Items>
+		</ComboBoxTimeUnit>
+		<LblFixHeader Caption="Statisk topptekst :"/>
+		<GroupBoxAxesNames Caption="Navn på akser "/>
+		<CheckBoxIncludeComment Caption="Inkluder komentarer"/>
+		<LblEditStartComment>
+			<SubLabel Caption="Start karakterer :"/>
+		</LblEditStartComment>
+		<LblEditEndComment>
+			<SubLabel Caption="Slutt karakterer :"/>
+		</LblEditEndComment>
+		
+	</FrameOptionGCode1>
+
+	<FrameOptionPreferences1>
+		<LblTitreP1 Caption="Ønsker du å tilknytte filtyper"/>
+		<LblTitreP2 Caption="med Jedicut ?"/>t
+		<CheckBoxDAT Caption="*.dat - Profil fil"/>
+		<CheckBoxJDC Caption="*.jdc - Vinge fil"/>
+		<CheckBoxJDP Caption="*.jdp - Profil fil"/>
+		<CheckBoxPRF Caption="*.prf - Profil fil"/>
+		<LblLangue Caption="Velg språk for Jedicut."/>
+		<CheckBoxUpdate Caption="Sjekk for oppdateringer atomatisk"/>	
+		<BtnOk Caption="OK"/>
+		<BtnAnnuler Caption="Avbryt"/>
+	</FrameOptionPreferences1>
+
+	<JvLblNomTable Caption="Aktiv tabell :"/>
+	<JvBitBtnChargerTable Caption="Last"/>
+	<JvBitBtnCreerTable Caption="Ny"/>
+	<JvBitBtnSupprimerTable Caption="Fjern"/>
+
+	<BtnOk Caption="OK"/>
+	<BtnAppliquer Caption="Bruk"/>	
+	<BtnAnnuler Caption="Avbryt"/>
+</FOptions>
+
+<FSimulation Caption="Simulering">
+	<TabSheet1 Caption="Kutt"/>
+	<TabSheet2 Caption="Oppvarming"/>
+	<GroupBoxPoly Caption="Isopor"/>
+		<LabeledEditHauteur>
+			<SubLabel Caption="Høyde"/>
+		</LabeledEditHauteur>
+		<LabeledEditLargeur>
+			<SubLabel Caption="Bredde"/>
+		</LabeledEditLargeur>
+	<GroupBoxSimulation Caption="Simulering"/>
+		<CheckBoxMoteurX1Y1 Caption="Stepper X1 og Y1"/>
+		<CheckBoxMoteurX2Y2 Caption="Stepper X2 og Y2"/>
+	<GroupBoxZoom Caption="Vis"/>
+	<BitBtnFermer Caption="Lukk"/>
+</FSimulation>
+
+<FConvertisseur Caption="Konverter">
+	<LblDescription Caption="Angi verdien som skal konverteres etter denne enheten :"/>
+	<LblEdtMm>
+		<SubLabel Caption="mm"/>
+	</LblEdtMm>
+	<LblEditIn>
+		<SubLabel Caption="Tomme"/>
+	</LblEditIn>
+</FConvertisseur>
+
+</Translation>
